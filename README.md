@@ -1,2 +1,17 @@
-# MakeMore--2
-A character-level language model implemented from scratch in PyTorch using a Multi-Layer Perceptron (MLP) architecture based on Bengio et al. (2003). Features a custom token embedding table, hidden layer pattern extraction, and an autoregressive sampling loop optimized via Adam to generate novel, human-like names.
+# Makemore Part 2: Multi-Layer Perceptron
+
+## Results
+- Final NLL: 2.0949
+- Improvement over bigram baseline: 14%
+- Generated names: anuelen, tia, marian, davius, saila, yana, kemah, lavin, emiah, aden
+
+## Architecture
+- Context window: 3 characters
+- Embedding dimension: 10
+- Hidden layer: 200 neurons
+- Training: 10 epochs, batch size 32
+
+## Key learnings
+- Depth matters (hidden layer improved results significantly)
+- Context window helps predictions
+- Sampling generates realistic new names
